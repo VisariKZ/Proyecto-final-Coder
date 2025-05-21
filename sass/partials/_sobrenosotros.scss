@@ -1,0 +1,25 @@
+@use "variables.scss" as *;
+
+.sobre-nosotros {
+  background-color: #b3b3b3;
+  padding: 60px 20px;
+  text-align: center;
+
+  h2 {
+    font-size: 3rem;
+    color: #1b263b;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: #1b263b;
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+
+  .sobre-nosotros-container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,127 @@
+@use "variables.scss" as *;
+
+.footer {
+  background-color: #1b263b;
+  color: #fff;
+  padding: 40px 20px 10px;
+  font-family: 'Arial', sans-serif;
+
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    gap: 30px;
+  }
+
+  .footer-logo {
+  flex: 1 1 250px;
+  text-align: center;
+
+  img {
+    width: 250px;
+    height: auto;
+    max-height: 270x;
+    margin-left: 80px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+  }
+  p {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: white;
+    margin: 12px;
+  }
+}
+
+  .footer-links {
+    flex: 1 1 200px;
+
+    h3 {
+      text-align: left;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: #f8f9fa;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 8px;
+      }
+
+      a {
+        color: #ddd;
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .footer-contacto {
+    flex: 1 1 200px;
+
+    h3 {
+      text-align: left;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: #f8f9fa;
+    }
+
+    i {
+      margin-right: 8px;
+      color: #00d1b2;
+    }
+    p {
+      margin-right: 155px;
+      font-size: 1.2rem;
+      font-weight: 300;
+      color: #ddd;
+      margin-bottom: 8px;
+    }
+  }
+
+  .footer-redes {
+    display: flex;
+    justify-content: left;
+    margin-top: 20px;
+    gap: 15px;
+
+    a {
+      margin-right: 0px;
+      color: #ddd;
+      font-size: 1.3rem;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #00d1b2;
+      }
+    }
+  }
+
+  .footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 30px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 0.9rem;
+    color: #aaa;
+  }
+}
+
+.footer-logo img {
+  transition: transform 0.6s ease;
+  transform: rotate(0deg);
+}
+.footer-logo img:hover {
+  transform: rotate(360deg);
+}
