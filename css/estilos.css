@@ -478,9 +478,6 @@ p {
 .footer .footer-logo img:hover {
   transform: rotate(360deg);
 }
-.footer .bg-dark {
-  background-color: #1b263b !important;
-}
 
 @media screen and (min-width: 360px) and (max-width: 950px) {
   .welcome-section {
