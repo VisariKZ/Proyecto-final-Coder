@@ -10,11 +10,9 @@
 </head>
 <body>
 
-    <!-- START HEADER -->
-
-
-  <header>
-  <nav id="navbar" class="nav">
+<!-- HEADER - NAVBAR SOLO PARA ESCRITORIO -->
+<header>
+  <nav id="navbar" class="nav d-none d-md-flex">
     <div class="nav-left">
       <img src="imagenes/CFMOTO_logo_white_symbol_sRGB.png" alt="Logo de CFMOTO Argentina" class="logo">
       <span class="nav-brand">CFMOTO ARGENTINA</span>
@@ -29,38 +27,60 @@
   </nav>
 </header>
 
-    <!-- END HEADER -->
+<!-- NAVBAR SOLO PARA MOBILE -->
+<div class="collapse d-md-none" id="navbarToggleExternalContent" data-bs-theme="dark">
+  <div class="bg-dark p-4">
+    <h5 class="text-white h4">CFMOTO ARGENTINA</h5>
+    <ul class="list-unstyled">
+      <li><a class="text-white" href="index.html">Inicio</a></li>
+      <li><a class="text-white" href="pages/catalogo.html">Catálogo</a></li>
+      <li><a class="text-white" href="pages/servicios.html">Servicios</a></li>
+      <li><a class="text-white" href="pages/sobrenosotros.html">Sobre Nosotros</a></li>
+      <li><a class="text-white" href="pages/contacto.html">Contacto</a></li>
+    </ul>
+  </div>
+</div>
+
+<nav class="navbar navbar-dark bg-dark d-md-none">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+
 
 <!-- START WELCOME SECTION -->
 
-<main>
-
-  <section id="welcome-section" class="welcome-section">
-      <div class="welcome-container">
-          <div class="welcome-text">
-              <h1>Concesionaria CFMoto</h1>
-              <p>Concesionaria de motos CFMoto en la ciudad de Buenos Aires</p>
-          </div>
-          <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="imagenes/CFMOTO-675-SR-R-fiche-1.jpeg" class="d-block w-100" alt="Cfmoto 675 SR">
-              </div>
-              <div class="carousel-item">
-                <img src="imagenes/MODERN-TECHNOLOGY-INTEGRATED-1.png" class="d-block w-100" alt="CLX 300 CFMOTO">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+<section id="welcome-section" class="welcome-section py-5">
+  <div class="container text-center">
+    <div class="welcome-text mb-4">
+      <h1 class="h3">Concesionaria CFMoto</h1>
+      <p>Concesionaria de motos CFMoto en la ciudad de Buenos Aires</p>
+    </div>
+    
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="imagenes/CFMOTO-675-SR-R-fiche-1.jpeg" class="d-block w-100 img-fluid" alt="Cfmoto 675 SR">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/MODERN-TECHNOLOGY-INTEGRATED-1.png" class="d-block w-100 img-fluid" alt="CLX 300 CFMOTO">
+        </div>
       </div>
-  </section>
+      
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </div>
+</section>
+
   
   <!-- END WELCOME SECTION -->
   

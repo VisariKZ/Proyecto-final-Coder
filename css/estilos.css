@@ -45,7 +45,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background-color: red;
+  background-color: rgb(255, 255, 255);
 }
 
 footer {
@@ -475,6 +475,83 @@ p {
 
 .footer-logo img:hover {
   transform: rotate(360deg);
+}
+
+@media screen and (max-width: 599px) {
+  .welcome-section {
+    padding: 20px 0;
+    max-width: 100%;
+  }
+  .carosuel {
+    width: 100px;
+    height: 100%;
+  }
+  .dblock {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (max-width: 768px) {
+  .welcome-text h1 {
+    font-size: 1.8rem;
+  }
+  .welcome-section {
+    object-fit: cover;
+    height: 100%;
+    max-width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .welcome-text p {
+    font-size: 1rem;
+  }
+  .carousel-inner {
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .carousel-inner img {
+    object-fit: cover;
+    height: 200px;
+    max-height: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .carousel-inner img:hover {
+    transform: none !important;
+    transition: none !important;
+    cursor: default !important;
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (max-width: 992px) {
+  .motos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 576px) {
+  .motos-grid {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  .moto-item img {
+    height: 180px;
+  }
+  .moto-info h3 {
+    font-size: 1rem;
+  }
+  .moto-info p {
+    font-size: 0.9rem;
+  }
+  .btn {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
