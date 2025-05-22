@@ -1,7 +1,7 @@
 @use "variables.scss" as *;
 @use "mixins" as *;
 
-@media screen and (min-width: 360px) and (max-width: 950px) {
+@media (max-width: 767px) {
   .welcome-section {
     padding: 20px 0;
     max-width: 100%;
@@ -27,9 +27,10 @@
     padding: 20px;
   }
 
-  .catalogo-container h1{
+  .catalogo-container h1 {
     font-size: 2rem;
   }
+
   .carousel {
     width: 100%;
     height: 100%;
@@ -108,14 +109,16 @@
   }
 
   .motos-grid {
-    grid-template-columns: 1fr;
-    padding: 20px;
+    grid-template-columns: repeat(1, 1fr) !important;
     width: 100%;
+    padding: 20px;
   }
 
   .moto-item img {
-    height: 180px;
+    width: 100%;
+    height: 300px;
   }
+
 
   .moto-info {
     h2 {
@@ -209,9 +212,9 @@
   }
 
   .moto-item img {
-    height: 500px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    max-width: 100%;
   }
 
   .moto-info {
