@@ -1,0 +1,18 @@
+// mixins.scss
+
+@mixin nav-link-style($color: $blanco, $hover-bg: $hover-claro) {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  color: $color;
+  text-decoration: none;
+  font-weight: 200;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $hover-bg;
+    text-decoration: underline;
+    border-radius: 15px;
+  }
+}

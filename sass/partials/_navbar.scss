@@ -1,11 +1,15 @@
+@use "variables.scss" as *;
+@use "mixins.scss" as *;
+
+
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #0a0814;
+  background-color: $azul-muy-oscuro;
   padding: 10px 20px;
   height: 70px;
-  color: white;
+  color: $blanco;
 }
 
 .nav-left {
@@ -36,20 +40,7 @@
 
   li {
     a {
-      display: flex;
-      align-items: center;
-      padding: 10px 15px;
-      color: white;
-      text-decoration: none;
-      font-weight: 200;
-      font-size: 1.1rem;
-      transition: background-color 0.3s ease;
-
-      &:hover {
-        background-color: rgba(255, 255, 255, 0.2);
-        text-decoration: underline;
-        border-radius: 15px;
-      }
+      @include nav-link-style($color: $blanco, $hover-bg: $azul-oscuro);
     }
   }
 }

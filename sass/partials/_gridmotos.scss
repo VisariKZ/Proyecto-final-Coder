@@ -2,7 +2,7 @@
 @use "variables.scss" as *;
 
 .motos-grid {
-  background-color: #b3b3b3;
+  background-color: $gris-claro;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
@@ -10,7 +10,7 @@
 }
 
 .moto-item {
-  background-color: #1b263b;
+  background-color: $azul-oscuro;
   overflow: hidden;
   text-align: center;
   transition: transform 0.3s ease;
@@ -28,7 +28,7 @@ img {
 }
 
 h3 {
-  color: rgb(255, 255, 255);
+  color: $blanco;
   font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 10px;
@@ -36,7 +36,6 @@ h3 {
 
 p {
   font-size: 1.2rem;
-  color: #ffffff;
+  color: $blanco;
   margin: 0.3rem 0;
 }
-

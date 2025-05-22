@@ -1,19 +1,20 @@
 @use "variables.scss" as *;
+@use "mixins" as *;
 
 .sobre-nosotros {
-  background-color: #b3b3b3;
+  background-color: $azul-oscuro;
   padding: 60px 20px;
   text-align: center;
 
   h2 {
     font-size: 3rem;
-    color: #1b263b;
+    color: $blanco;
     margin-bottom: 1rem;
   }
 
   p {
     font-size: 1.2rem;
-    color: #1b263b;
+    color: $blanco;
     margin-bottom: 15px;
     line-height: 1.6;
   }

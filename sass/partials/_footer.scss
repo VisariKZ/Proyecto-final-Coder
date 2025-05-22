@@ -1,8 +1,9 @@
 @use "variables.scss" as *;
+@use "mixins" as *;
 
 .footer {
-  background-color: #1b263b;
-  color: #fff;
+  background-color: $azul-oscuro;
+  color: $blanco;
   padding: 40px 20px 10px;
   font-family: 'Arial', sans-serif;
 
@@ -16,24 +17,25 @@
   }
 
   .footer-logo {
-  flex: 1 1 250px;
-  text-align: center;
+    flex: 1 1 250px;
+    text-align: center;
 
-  img {
-    width: 250px;
-    height: auto;
-    max-height: 270x;
-    margin-left: 80px;
-    margin-bottom: 10px;
-    border-radius: 15px;
+    img {
+      width: 250px;
+      height: auto;
+      max-height: 270x;
+      margin-left: 80px;
+      margin-bottom: 10px;
+      border-radius: 15px;
+    }
+
+    p {
+      font-size: 1.6rem;
+      font-weight: 300;
+      color: $blanco;
+      margin: 12px;
+    }
   }
-  p {
-    font-size: 1.6rem;
-    font-weight: 300;
-    color: white;
-    margin: 12px;
-  }
-}
 
   .footer-links {
     flex: 1 1 200px;
@@ -43,7 +45,7 @@
       text-transform: uppercase;
       font-size: 1.2rem;
       margin-bottom: 10px;
-      color: #f8f9fa;
+      color: $blanco;
     }
 
     ul {
@@ -55,12 +57,12 @@
       }
 
       a {
-        color: #ddd;
+        color: $gris-muy-claro;
         text-decoration: none;
         transition: color 0.3s ease;
 
         &:hover {
-          color: #fff;
+          color: $blanco;
         }
       }
     }
@@ -74,18 +76,19 @@
       text-transform: uppercase;
       font-size: 1.2rem;
       margin-bottom: 10px;
-      color: #f8f9fa;
+      color: $gris-super-claro;
     }
 
     i {
       margin-right: 8px;
-      color: #00d1b2;
+      color: $turquesa;
     }
+
     p {
       margin-right: 155px;
       font-size: 1.2rem;
       font-weight: 300;
-      color: #ddd;
+      color: $gris-muy-claro;
       margin-bottom: 8px;
     }
   }
@@ -98,30 +101,35 @@
 
     a {
       margin-right: 0px;
-      color: #ddd;
+      color: $gris-claro;
       font-size: 1.3rem;
       transition: color 0.3s ease;
 
       &:hover {
-        color: #00d1b2;
+        color: $turquesa;
       }
     }
   }
 
   .footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: $hover-claro;
     margin-top: 30px;
     text-align: center;
     padding-top: 10px;
     font-size: 0.9rem;
-    color: #aaa;
+    color: $gris-medio;
   }
-}
 
-.footer-logo img {
-  transition: transform 0.6s ease;
-  transform: rotate(0deg);
-}
-.footer-logo img:hover {
-  transform: rotate(360deg);
+  .footer-logo img {
+    transition: transform 0.6s ease;
+    transform: rotate(0deg);
+  }
+
+  .footer-logo img:hover {
+    transform: rotate(360deg);
+  }
+
+  .bg-dark {
+    background-color: $azul-oscuro !important;
+  }
 }

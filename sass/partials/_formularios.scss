@@ -1,17 +1,20 @@
 @use "variables.scss" as *;
+@use "mixins" as *;
 
 .formulario {
-  background: #22304b;
+  background: $fondo-banner;
   padding: 40px 20px;
-  color: white;
+  color: $blanco;
 
   h2 {
+    color: $azul-oscuro;
     font-size: 3rem;
     text-transform: uppercase;
     margin-bottom: 1rem;
   }
 
   p {
+    color: $azul-oscuro;
     font-size: 1.2rem;
     font-weight: 300;
     margin-bottom: 20px;
@@ -23,7 +26,7 @@
 
     label {
       font-size: 1rem;
-      color: #ccc;
+      color: $azul-oscuro;
     }
 
     input,
@@ -36,15 +39,15 @@
     }
 
     input[type="submit"] {
-      background-color: #ffffff;
-      color: rgb(0, 0, 0);
+      background-color: $blanco;
+      color: $azul-oscuro;
       font-size: 1.2rem;
       cursor: pointer;
       transition: background-color 0.3s ease;
 
       &:hover {
-        background-color: #288b30;
-        color: white;
+        background-color: $verde;
+        color: $blanco;
       }
     }
   }
@@ -54,4 +57,3 @@
     margin: 0 auto;
   }
 }
-

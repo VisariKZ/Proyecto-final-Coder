@@ -1,55 +1,59 @@
-@media screen and (max-width: 576px) {
+@use "variables.scss" as *;
+@use "mixins" as *;
 
-    .welcome-section {
-        padding: 20px 0;
-        max-width: 100%;
-    }
-
-    .carosuel {
-        width: 100px;
-        height: 100%;
-    }
-
-    .dblock {
-        width: 100px;
-        height: 100px;
-    } 
-}
-
-@media (max-width: 768px) {
-  .welcome-text h1 {
-    font-size: 1.8rem;
-  }
-
+@media screen and (min-width: 360px) and (max-width: 950px) {
   .welcome-section {
+    padding: 20px 0;
+    max-width: 100%;
     object-fit: cover;
     height: 100%;
-    max-width: 100%;
-    padding: 20px;
     margin: 0 auto;
     text-align: center;
   }
-  .welcome-text p {
-    font-size: 1rem;
+
+  .welcome-text {
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .catalogo-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .catalogo-container h1{
+    font-size: 2rem;
+  }
+  .carousel {
+    width: 100%;
+    height: 100%;
   }
 
   .carousel-inner {
+    width: 100%;
     max-width: 100%;
     height: 100%;
     margin: 0 auto;
-  }
 
-  .carousel-inner img {
-    object-fit: cover;
-    height: 200px;
-    max-height: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-  }
-  .carousel-inner img:hover {
-    transform: none !important;
-    transition: none !important;
-    cursor: default !important;
+    img {
+      object-fit: cover;
+      height: 100%;
+      max-height: 100%;
+      max-width: 100%;
+      margin: 0 auto;
+
+      &:hover {
+        transform: none !important;
+        transition: none !important;
+        cursor: default !important;
+      }
+    }
   }
 
   .carousel-control-prev-icon,
@@ -57,30 +61,167 @@
     width: 30px;
     height: 30px;
   }
-}
 
-@media (max-width: 992px) {
-  .motos-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .dblock {
+    width: 100px;
+    height: 100px;
   }
-}
 
-@media (max-width: 576px) {
+  .servicios-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-left: -12px;
+
+    li {
+      width: 170px;
+      height: 100%;
+      font-size: 1.5rem;
+      font-weight: 300;
+      color: $blanco;
+      padding: 10px 20px;
+      background-color: $azul-oscuro;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px $sombra-clara;
+      transition: background-color 0.3s ease;
+    }
+  }
+
+  .footer-logo {
+    margin-left: -20px;
+
+    img {
+      margin-right: 60px;
+    }
+  }
+
+  .footer-contacto {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-right: -20px;
+
+    p {
+      text-align: center;
+      margin-left: -50px;
+    }
+  }
+
   .motos-grid {
     grid-template-columns: 1fr;
     padding: 20px;
+    width: 100%;
   }
 
   .moto-item img {
     height: 180px;
   }
 
-  .moto-info h3 {
-    font-size: 1rem;
+  .moto-info {
+    h2 {
+      font-size: 1.3rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
   }
 
-  .moto-info p {
+  .btn {
     font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+  .welcome-section {
+    padding: 20px 0;
+    max-width: 100%;
+  }
+
+  .carousel {
+    width: 100%;
+    height: 100%;
+  }
+
+  .dblock {
+    width: 100px;
+    height: 100px;
+  }
+
+  .welcome-text {
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .carousel-inner {
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+
+    img {
+      object-fit: cover;
+      height: 100%;
+      max-height: 100%;
+      max-width: 100%;
+      margin: 0 auto;
+
+      &:hover {
+        transform: none !important;
+        transition: none !important;
+        cursor: default !important;
+      }
+    }
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer-logo {
+    img {
+      margin-right: 60px;
+    }
+  }
+
+  .footer-contacto {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-right: -20px;
+
+    p {
+      text-align: center;
+    }
+  }
+
+  .motos-grid {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .moto-item img {
+    height: 500px;
+    object-fit: cover;
+    max-width: 100%;
+  }
+
+  .moto-info {
+    h3 {
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
   }
 
   .btn {
